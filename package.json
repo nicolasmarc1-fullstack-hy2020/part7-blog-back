@@ -1,0 +1,43 @@
+{
+  "name": "part7-blog-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
+    "awesome-npm": "npm run start && echo 'echo NPM is awesome!'",
+    "dev": "cross-env NODE_ENV=development nodemon --trace-warnings index.js",
+    "loch": "nodemon --exec \"heroku local\" --signal SIGTERM",
+    "build:ui": "rm -rf build && cd ../part7-blog-front/ && npm run build --prod && cp -r build  ../part7-blog-back/",
+    "deploy": "git push heroku master",
+    "deploy:back": "git add . && git commit -m \"heroku uibuild\" && npm run deploy",
+    "deploy:full": "npm run build:ui && git add . && git commit -am \"heroku uibuild\" && npm run deploy",
+    "logs:prod": "heroku logs --tail",
+    "openh": "heroku ps:scale web=1 && heroku open && npm run logs:prod",
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
+    "gc": "git add . && git commit -am",
+    "lint": "eslint .",
+    "debug:chrome": "node --inspect-brk index.js ",
+    "start:test": "cross-env NODE_ENV=test node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.13",
+    "mongoose-unique-validator": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "eslint": "^6.8.0",
+    "jest": "^25.3.0",
+    "nodemon": "^2.0.3",
+    "supertest": "^4.0.2"
+  }
+}

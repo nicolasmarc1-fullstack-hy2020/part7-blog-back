@@ -1,0 +1,8 @@
+DELETE http://localhost:3003/api/blogs/5e9b5e9fb05f4aa634de9a93
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhlbGxhcyIsImlkIjoiNWU5YWYyNDIzYzgzODBhODJjODAzODYyIiwiaWF0IjoxNTg3MjQwNDMyfQ.l92rx6-6QClo-ZdhXa1YNUeD3g2odi_07exZD5lTz3c
+
+
+### user 2 try delete user1 blog
+DELETE http://localhost:3003/api/blogs/5e9de5ae71b17f426d404355
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI1ZTlhZjEzZTNjODM4MGE4MmM4MDM4NjAiLCJpYXQiOjE1ODcyNDg1ODh9.d6xl-hDggno2aH2U0AHHta8B-RncA4cLHFUPLRKpxO4
+

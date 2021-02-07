@@ -1,0 +1,2 @@
+ (ctrl+alt+r)  if link not working
+ https://github.com/Huachao/vscode-restclient/issues/129

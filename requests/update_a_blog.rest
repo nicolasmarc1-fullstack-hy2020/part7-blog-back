@@ -1,0 +1,11 @@
+PUT http://localhost:3003/api/blogs/5ea0b39d7feaed5f145d2898
+Content-Type: application/json
+
+{
+  "title": "vfd",
+  "author": "vfdf",
+  "url": "vdf",
+  "likes": 9,
+  "user": "5e9af2423c8380a82c803862",
+  "id": "5ea0b39d7feaed5f145d2898"
+}

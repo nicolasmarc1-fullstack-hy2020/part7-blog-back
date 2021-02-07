@@ -1,0 +1,36 @@
+
+
+
+id 5e9af13e3c8380a82c803860
+{
+  "username": "mluukkai",
+  "name": "Matti Luukkainen",
+  "password": "salainen"
+}
+
+{
+  "title": "Things I Don’t Know as of 2018",
+  "author": "Dan Abramov",
+  "url": "https://overreacted.io/things-i-dont-know-as-of-2018/",
+  "likes": "0",
+  "userId": "5e9af13e3c8380a82c803860"
+}
+
+
+
+id 5e9af2423c8380a82c803862
+{
+  "username": "hellas",
+  "name": "Arto Hellas",
+  "password": "pwd"
+}
+
+{
+  "title": "Microservices and the First Law of Distributed Objects",
+  "author": "Martin Fowler",
+  "url": "https://martinfowler.com/articles/distributed-objects-microservices.html",
+  "likes": "0",
+  "userId": "5e9af2423c8380a82c803862"
+}
+
+
